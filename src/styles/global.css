@@ -1,3 +1,109 @@
+/* Button for expanding/collapsing course details */
+.expand-details-btn {
+  margin: 1em 0;
+  padding: 0.5em 1em;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 6px;
+  border: none;
+  background: var(--color-secondary, #FFCB05);
+  color: var(--color-primary, #00274C);
+  font-weight: 600;
+  transition: background 0.2s;
+}
+.expand-details-btn:hover,
+.expand-details-btn:focus {
+  background: #ffe066;
+}
+
+/* Expanded course details section (two-column) */
+.course-details-columns {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 1em;
+  flex-wrap: wrap;
+}
+.course-details-col {
+  flex: 1 1 280px;
+  min-width: 250px;
+  max-width: 420px;
+  background: rgba(255,255,255,0.07);
+  border-radius: 8px;
+  padding: 1.5em 2em;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+  text-align: left;
+}
+.course-details-col h3 {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  text-align: left;
+}
+.course-details-col h4 {
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  text-align: left;
+}
+.course-details-col ul {
+  padding-left: 1.2em;
+  margin-top: 0.5em;
+}
+.course-details-col p {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  text-align: left;
+}
+.course-details-col table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.5em;
+}
+.course-details-col table th {
+  text-align: left;
+  padding: 0.5em 0.75em;
+  border-bottom: 2px solid rgba(255,255,255,0.2);
+  font-weight: 600;
+}
+.course-details-col table td {
+  padding: 0.75em 0.75em;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  vertical-align: top;
+}
+.course-details-col table td:first-child {
+  font-weight: 600;
+  white-space: nowrap;
+}
+@media (max-width: 900px) {
+  .course-details-columns {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
+/* Two-column layout for expanded course details */
+.course-details-columns {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 1em;
+  flex-wrap: wrap;
+}
+.course-details-col {
+  flex: 1 1 320px;
+  min-width: 280px;
+  max-width: 500px;
+  background: rgba(255,255,255,0.07);
+  border-radius: 8px;
+  padding: 1.2em 1.5em;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+@media (max-width: 900px) {
+  .course-details-columns {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
 /* Global site layout/styles used by pages and shared components */
 /* Moved from App.css to decouple from App component */
 
